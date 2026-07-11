@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg,aqua,pink);
+
+        }
+        .container{
+            height: 150px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+            border-radius: 20px;
+            text-align: center;
+
+
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+        
+        }
+        .btn{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+        button{
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .btn :nth-child(1){
+            background: rgb(2,132,82);
+
+        }
+        .btn :nth-child(2){
+            background: rgb(183,4,4);
+            
+        }
+        .btn :nth-child(3){
+            background: rgb(232,232,95);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>counter button</h1>
+        <p id="count">0</p>
+        <div class="btn">
+            <button id="btn1" ondblclick="increment()">increment</button>
+            <button id="btn2" onclick="decrease()">decrement</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
